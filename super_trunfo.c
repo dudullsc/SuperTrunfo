@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -19,7 +20,7 @@ int main() {
     scanf("%2s", estado1); // Coloquei "%2s" para garantir que só lê 2 caracteres
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite o código da carta (ex: A01): ");
+    printf("Digite o codigo da carta (ex: A01): ");
     scanf("%3s", codigo1);
     getchar(); // Coloquei "getchar" Limpa o Enter
     
@@ -27,11 +28,11 @@ int main() {
     fgets(nomeCidade1, sizeof(nomeCidade1), stdin);
     nomeCidade1[strcspn(nomeCidade1, "\n")] = 0; // Remove o '\n' final para entrar com o dado seguinte
 
-    printf("Digite a população: ");
+    printf("Digite a populacao: ");
     scanf("%d", &populacao1);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite a área em km²: ");
+    printf("Digite a area em km²: ");
     scanf("%f", &area1);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
@@ -39,7 +40,7 @@ int main() {
     scanf("%f", &pib1);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite o número de pontos turísticos: ");
+    printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos1);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
@@ -59,7 +60,7 @@ int main() {
     scanf("%2s", estado2);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite o código da carta (ex: B02): ");
+    printf("Digite o codigo da carta (ex: B02): ");
     scanf("%3s", codigo2);
     getchar(); // Coloquei "getchar" Limpa o Enter
     
@@ -67,11 +68,11 @@ int main() {
     fgets(nomeCidade2, sizeof(nomeCidade2), stdin);
     nomeCidade2[strcspn(nomeCidade2, "\n")] = 0; // Remove o '\n' final
 
-    printf("Digite a população: ");
+    printf("Digite a populacao: ");
     scanf("%d", &populacao2);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite a área em km²: ");
+    printf("Digite a area em km²: ");
     scanf("%f", &area2);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
@@ -79,28 +80,28 @@ int main() {
     scanf("%f", &pib2);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
-    printf("Digite o número de pontos turísticos: ");
+    printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
     getchar(); // Coloquei "getchar" Limpa o Enter
 
     // Exibição dos dados cadastrados
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", estado1);  
-    printf("Código: %s\n", codigo1); 
+    printf("Codigo: %s\n", codigo1); 
     printf("Nome da Cidade: %s\n", nomeCidade1); 
-    printf("População: %d\n", populacao1);
-    printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhoes de reais\n", pib1);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
     
     printf("\nCarta 2:\n");
     printf("Estado: %s\n", estado2);
-    printf("Código: %s\n", codigo2);
+    printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nomeCidade2);
-    printf("População: %d\n", populacao2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhoes de reais\n", pib2);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     
     return 0;
 }
